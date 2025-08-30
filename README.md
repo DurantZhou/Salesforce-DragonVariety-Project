@@ -7,13 +7,13 @@ Based on the context, the goal of integrating Salesforce into the business inclu
 
 ## 2. Tools and Technology
 ### System Configuration
-Salesforce Org, Sales Cloud, Salesforce Maps, Microsoft Outlook, Sandbox
+Salesforce Org, Sales Cloud, Salesforce Maps, Microsoft Outlook, Sandbox,etc.
 ### Data Management and Synchronization
-Data Loader, Excel, Tableau, Zapier
+Data Loader, Excel, Tableau, Zapier,Python,etc.
 ### Business Operation Support
 Flow, Reports, Email2Case, Web2Case, Chatter, etc.
 
-## Business Pain Points and Solution
+## 3. Business Pain Points and Solution
 #### Challenge 1
 Currently all the business data is in another system, the sales supervisor required data to be synced into Salesforce, and Sync order and customer data in real time.
 #### Solution 1
@@ -57,5 +57,21 @@ In addition, create a FLOW with Email Alert to send welcome letter to the email 
 <img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/a7bbb611-693b-49cf-bfa1-8649cd89f1d7" />
 
 
+#### Challenge 6
+Usually regular customers contact sales team once they need something urgently, but sales are unable to answer calls or messages in time due to scattered working time.
+Therefore, the sales supervisor required a solution to hook customers' enquiry and respond to them instantly.
+#### Solution 6
+Designed a flyer and add an QR code on the flyer. When sales visited customers'store, they distributed flyers and introduce its function. When customers needed, they could 
+simply scan the QR code and fill in the form. From the backend, we used web2case to automatically generate cases when customers fill in the information
+<img width="1851" height="1065" alt="image" src="https://github.com/user-attachments/assets/00901d7e-aeb4-4e93-9b48-949520621d10" />
+<img width="2244" height="1043" alt="image" src="https://github.com/user-attachments/assets/e8a5d454-e1b4-49e4-9860-a7ad127b161b" />
 
+
+#### Challenge 7
+The sales team wanted to try placing orders directly in the Salesforce system, during the test, some issues were found such as missing price book, missing products photos, and so on.
+#### Solution 7
+##### Update Price books by using Data Loader (Update Price Book Entry)
+##### Upload Product Images by using ContentVersion and ContentDocumentLink.
+##### Utilize Sandbox to test place order inside the system through integrating with Pappasales.
+<img width="1902" height="1176" alt="image" src="https://github.com/user-attachments/assets/c8eff29d-c11d-450f-8e6a-c07ffe8b7b9c" />
 
